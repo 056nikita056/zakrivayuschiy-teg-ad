@@ -6,15 +6,12 @@
 
 .card__icon-button:hover .like-icon .core {
   fill: var(--contour-color);
+  transition-delay: 0s;
 }
 
 .card__icon-button:hover .like-icon .main-body {
   fill: var(--contour-color);
   transition-delay: 0.05s;
-}
-
-.card__icon-button:hover .like-icon .core {
-  transition-delay: 0s;
 }
 
 .card__icon-button:not(:hover) .like-icon .main-body {
@@ -57,12 +54,25 @@
 }
 
 @keyframes heart-pop {
-  0% { transform: scale(1); transform-origin: center; }
-  50% { transform: scale(1.25); transform-origin: center; }
-  100% { transform: scale(1); transform-origin: center; }
+  0% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+  50% {
+    transform: scale(1.25);
+    transform-origin: center;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
 }
 
 @keyframes sparks-show {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
