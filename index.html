@@ -285,11 +285,11 @@
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <div class="dialog__form">
-        <button class="dialog__button ui-button" type="button" onclick="document.getElementById('dialog').close()">          
+      <form class="dialog__form" method="dialog">
+        <button class="dialog__button ui-button" type="submit" onclick="document.getElementById('dialog').close()">
           <span class="button__text">OK</span>
         </button>
-      </div>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
