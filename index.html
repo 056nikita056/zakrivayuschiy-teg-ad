@@ -286,11 +286,11 @@
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form method="dialog" class="dialog__form">
-        <button class="dialog__button ui-button">
+      <div class="dialog__form">
+        <button class="dialog__button ui-button" type="button" onclick="this.closest('dialog').close()">
           <span class="button__text">OK</span>
         </button>
-      </form>
+      </div>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
